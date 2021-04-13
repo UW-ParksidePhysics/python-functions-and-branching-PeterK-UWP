@@ -1,23 +1,20 @@
 
+#x = [-10, -10^(-15), 0, 10^(-15), 10]
+import numpy as np
 
-x = [-10, -10^(-15), 0, 10^(-15), 10]
+x = np.array([-10, -10**(-15), 0, 10**(-15), 10])
+y = np.array([0, 0, 1, 1, 1])
+h = []
+for i in range(len(x)):
+   
+   gfg = np.heaviside(x[i], y[i])
+   h.append(gfg)
+    
+print(h)
+  
 
-def heaviside(x):
-  h = []
-  for i in x:
-    h.append(x(i[0], i[1], i[2], i[3], i[4]))
-  return h
-  print(heaviside)
 
-def heav():
-  heav = []
-  for x in range(1,6):
-    if x < 0:
-      heav.append(0)  
-    elif x >= 0:
-      heav.append(1)
 
-  print(heav)
 
 
 
@@ -36,3 +33,25 @@ def heav():
  # for i in x:
    # h.append(x(i[0], i[1], i[2], i[3], i[4]))
  # return h
+
+ 
+
+
+#def heaviside(x):
+ # h = []
+ # for i in x:
+ #   h.append(x(i[0], i[1], i[2], i[3], i[4]))
+ # return h
+
+#print('heaviside')
+
+#def heav():
+  #heav = []
+  #for x in range(1,6):
+     #     test(input())
+    #if x < 0:
+    #  heav.append(0)  
+   # elif x >= 0:
+  #    heav.append(1)
+
+ # print(heav)
