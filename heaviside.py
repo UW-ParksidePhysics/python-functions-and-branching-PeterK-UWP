@@ -3,7 +3,7 @@
 import numpy as np
 
 x = np.array([-10, -10**(-15), 0, 10**(-15), 10])
-y = np.array([0, 0, 1, 1, 1])
+y = np.array([0, 0, 1, 1, 1 ])
 h = []
 for i in range(len(x)):
    
